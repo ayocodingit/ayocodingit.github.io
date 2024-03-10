@@ -1,0 +1,19 @@
+* {
+    font-family: "EB Garamond", serif;
+}
+
+.header-title, #footer {
+    color: pink
+}
+
+.header-subtitle {
+    color: gray;
+}
+
+#links .row {
+    margin-top: 20px;
+}
+
+#header {
+    background-color: rgba(240, 185, 185, 0.1);
+}
