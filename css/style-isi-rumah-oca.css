@@ -3,31 +3,31 @@
 }
 
 .header-title, #footer, #footer h5 {
-    color: pink
+    color: darkgray
 }
 
 .header-subtitle {
-    color: gray;
+    color: white;
 }
 
 #links .row {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: rgba(255, 192, 203, 0.785);
+    background-color: rgba(134, 127, 128, 0.785);
 }
 
 #links {
-    background-image: url('../assets/pexels-mart-production-8801124.jpg');
+    background-image: url('../assets/pexels-life-of-pix-8892.jpg');
     background-size: contain;
     background-repeat: round;
 }
 
 #header {
-    background-color: rgba(240, 185, 185, 0.461);
+    background-color: gray;
 }
 
 #links h3 {
-    color: #ca40ac;
+    color: #ffffff;
 }
 
 .spill-isi-rumah-oca {
