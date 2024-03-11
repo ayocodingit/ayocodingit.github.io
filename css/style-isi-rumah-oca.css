@@ -10,10 +10,6 @@
     color: white;
 }
 
-#links .row {
-    background-color: rgba(134, 127, 128, 0.785);
-}
-
 #links {
     background-size: contain;
     background-repeat: round;
@@ -25,6 +21,7 @@
 
 #links h3 {
     color: #ffffff;
+    background-color: rgba(134, 127, 128, 0.785);
 }
 
 .spill-isi-rumah-oca {

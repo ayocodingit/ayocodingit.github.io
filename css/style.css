@@ -10,10 +10,6 @@
     color: gray;
 }
 
-#links .row {
-    background-color: rgba(255, 192, 203, 0.785);
-}
-
 #links {
     background-size: contain;
     background-repeat: round;
@@ -24,6 +20,7 @@
 }
 
 #links h3 {
+    background-color: rgba(255, 192, 203, 0.785);
     color: #ca40ac;
 }
 
