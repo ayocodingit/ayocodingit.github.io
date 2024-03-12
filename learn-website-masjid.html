@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="./js/dark.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Masjid AT-Taqwa</title>
+</head>
+
+<body class="dark:bg-dark-primary text-white">
+    <!-- Navigation -->
+    <nav class="dark:bg-dark-primary bg-white shadow sticky top-0">
+        <div class="container mx-auto">
+            <div class="flex items-center gap-10 justify-between p-3" x-data="{ open: false }">
+                <!-- logo -->
+                <div class="flex items-center gap-5">
+                    <img src="assets/logo-masjid.png" class="w-20" alt="">
+                    <span class="dark:text-white text-black">AT Taqwa</span>
+                </div>
+
+                <!-- navbar -->
+                <ul class="lg:flex justify-between gap-3 hidden text-center dark:text-white text-black">
+                    <li class="">
+                        <a href="#about-us" class="cursor-pointer ease-in-out hover:text-gray-400">About us</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="cursor-pointer ease-in-out hover:text-gray-400">News</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="cursor-pointer ease-in-out hover:text-gray-400">Educations</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="cursor-pointer ease-in-out hover:text-gray-400">Event</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="cursor-pointer ease-in-out hover:text-gray-400">Donate</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="cursor-pointer ease-in-out hover:text-gray-400">Services</a>
+                    </li>
+                </ul>
+
+                <!-- search -->
+                <div class="lg:flex hidden gap-2 text-center">
+                    <input type="text"
+                        class="lg:w-56 md:w-30 w-20 h-10 px-5 focus:outline-none border-2 focus:border-blue-400"
+                        placeholder="Cari ...">
+                    <label for=""
+                        class="w-20 h-10 border-none hover:bg-green-900 p-2 bg-green-800 text-white">Search</label>
+                </div>
+
+                <!-- bugger menu -->
+                <div class="lg:hidden">
+                    <button @click="open = !open"><ion-icon name="menu"
+                            class="text-3xl dark:text-white text-black"></ion-icon></button>
+                </div>
+
+
+                <!-- navbar mobile -->
+                <ul class="absolute flex flex-col items-center lg:hidden justify-center gap-4 dark:bg-dark-primary bg-white/90 right-0 top-20 w-full h-auto py-5 my-5"
+                    x-show="open" x-transition>
+                    <li class="">
+                        <a href="#about-us"
+                            class="cursor-pointer ease-in-out hover:text-gray-400 dark:text-white text-black">About
+                            us</a>
+                    </li>
+                    <li class="">
+                        <a href=""
+                            class="cursor-pointer ease-in-out hover:text-gray-400 dark:text-white text-black">News</a>
+                    </li>
+                    <li class="">
+                        <a href=""
+                            class="cursor-pointer ease-in-out hover:text-gray-400 dark:text-white text-black">Educations</a>
+                    </li>
+                    <li class="">
+                        <a href=""
+                            class="cursor-pointer ease-in-out hover:text-gray-400 dark:text-white text-black">Event</a>
+                    </li>
+                    <li class="">
+                        <a href=""
+                            class="cursor-pointer ease-in-out hover:text-gray-400 dark:text-white text-black">Donate</a>
+                    </li>
+                    <li class="">
+                        <a href=""
+                            class="cursor-pointer ease-in-out hover:text-gray-400 dark:text-white text-black">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us -->
+    <section id="about-us">
+        <div class="container mx-auto">
+            <div
+                class="grid grid-cols-12 items-center px-5 dark:bg-blue-950 bg-green-800 shadow-lg rounded-b-md dark:shadow-blue-950 shadow-green-800 py-8 gap-6">
+                <div class="text-white lg:col-span-6 col-span-12 flex flex-col gap-6 text-center lg:text-left">
+                    <h1 class="lg:text-4xl font-bold">Are you ready to start learning?</h1>
+                    <p class="text-gray-300/80">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quidem
+                        officiis veritatis labore aliquid eveniet aut id voluptatum sint tempora?</p>
+                    <div class="flex gap-4 justify-center lg:justify-start">
+                        <button class="rounded-full bg-white text-green-700 w-44 h-12">Read More</button>
+                        <button class="rounded-full dark:bg-yellow-900 bg-green-700 text-white w-44 h-12">Get
+                            Involved</button>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 flex col-span-12">
+                    <img src="assets/logo-masjid.png" class="lg:w-100 w-70 mx-auto" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
