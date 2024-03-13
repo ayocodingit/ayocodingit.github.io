@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="./js/dark.js"></script>
     <link href="./css/style.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 
 <body class="dark:bg-dark-primary text-white">
     <!-- Navigation -->
-    <nav class="dark:bg-dark-primary bg-white shadow sticky top-0 z-10">
+    <nav class="dark:bg-dark-primary bg-white shadow sticky top-0 z-10 border-b-2">
         <div class="container mx-auto">
             <div class="flex items-center gap-10 justify-between p-3" x-data="{ open: false }">
                 <!-- logo -->
@@ -68,7 +68,7 @@
 
 
                 <!-- navbar mobile -->
-                <ul class="absolute flex flex-col items-center lg:hidden justify-center gap-4 dark:bg-dark-primary bg-white/90 right-0 top-11 w-full h-auto py-5 my-5"
+                <ul class="absolute flex flex-col items-center lg:hidden justify-center gap-4 dark:bg-dark-primary bg-white right-0 top-11 w-full h-auto py-5 my-5"
                     x-show="open" x-transition>
                     <li class="">
                         <a href="#about-us"
@@ -103,7 +103,7 @@
     <!-- About Us -->
     <section id="about-us">
         <div
-            class="container mx-auto dark:bg-blue-950 bg-green-800 shadow-lg rounded-md dark:shadow-blue-950 shadow-green-800 py-8">
+            class="container mx-auto dark:bg-blue-950 bg-green-800 shadow-lg rounded-md dark:shadow-blue-950 shadow-green-800 py-8 mt-8">
             <div class="grid grid-cols-12 items-center  gap-6">
                 <div
                     class="text-white lg:col-span-5 lg:col-start-2 col-span-12 flex flex-col gap-6 text-center lg:text-left order-2 lg:order-1 px-2">
@@ -111,9 +111,11 @@
                     <p class="text-gray-300/80">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quidem
                         officiis veritatis labore aliquid eveniet aut id voluptatum sint tempora?</p>
                     <div class="flex gap-4 justify-center lg:justify-start">
-                        <button class="rounded-full bg-white text-green-700 lg:w-40 w-32 h-12 dark:text-black">Read
+                        <button
+                            class="rounded-full bg-white text-green-700 lg:w-40 w-32 h-12 dark:text-black hover:bg-gray-200 p-2">Read
                             More</button>
-                        <button class="rounded-full dark:bg-yellow-900 bg-green-700 text-white lg:w-44 w-32 h-12">Get
+                        <button
+                            class="rounded-full dark:bg-yellow-900 bg-green-700 text-white lg:w-44 w-32 h-12 hover:bg-green-900 p-2">Get
                             Involved</button>
                     </div>
                 </div>
@@ -129,7 +131,7 @@
     <section id="quick-link">
         <div class="container mx-auto py-10">
             <div class="lg:flex lg:justify-between items-center">
-                <h1 class="font-bold lg:text-2xl text-center lg:text-left dark:text-white text-green-600 text-lg">Quick
+                <h1 class="font-bold text-2xl text-center lg:text-left dark:text-white text-green-600">Quick
                     Links</h1>
                 <button
                     class="text-white dark:text-white bg-green-700 rounded-full w-32 lg:w-44 h-10 hover:bg-green-900 invisible lg:visible">Show
@@ -140,51 +142,50 @@
             <div class="grid grid-cols-12 text-center items-center py-5 ">
                 <div class="col-span-12 m-3 md:col-span-4 lg:col-span-2">
                     <div
-                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 flex flex-col items-center  shadow px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer ">
+                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 flex flex-col items-center  shadow shadow-neutral-400 px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
                         <ion-icon name="bookmarks"
                             class="dark:group-hover:text-white group-hover:text-green-700"></ion-icon>
-                        <p class="group-hover:text-green-700 dark:group-hover:text-white text-xs">News/Blog</p>
+                        <p class="group-hover:text-green-700 dark:group-hover:text-white">News/Blog</p>
                     </div>
                 </div>
                 <div class="col-span-12 m-3 md:col-span-4 lg:col-span-2">
                     <div
-                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
+                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow shadow-neutral-400 px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
                         <ion-icon name="clipboard"
                             class="group-hover:text-green-700 dark:group-hover:text-white "></ion-icon>
-                        <p class="group-hover:text-green-700 text-xs dark:group-hover:text-white ">Educational Content
-                        </p>
+                        <p class="group-hover:text-green-700 dark:group-hover:text-white ">Educational Content</p>
                     </div>
                 </div>
                 <div class="col-span-12 m-3 md:col-span-4 lg:col-span-2">
                     <div
-                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
+                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow shadow-neutral-400 px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
                         <ion-icon name="calendar"
                             class="group-hover:text-green-700 dark:group-hover:text-white "></ion-icon>
-                        <p class="group-hover:text-green-700 text-sm dark:group-hover:text-white ">Event</p>
+                        <p class="group-hover:text-green-700 dark:group-hover:text-white ">Event</p>
                     </div>
                 </div>
                 <div class="col-span-12 m-3 md:col-span-4 lg:col-span-2">
                     <div
-                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
+                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow shadow-neutral-400 px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
                         <ion-icon name="heart"
                             class="group-hover:text-green-700 dark:group-hover:text-white "></ion-icon>
-                        <p class="group-hover:text-green-700 text-sm dark:group-hover:text-white ">Donate</p>
+                        <p class="group-hover:text-green-700 dark:group-hover:text-white ">Donate</p>
                     </div>
                 </div>
                 <div class="col-span-12 m-3 md:col-span-4 lg:col-span-2">
                     <div
-                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
+                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow shadow-neutral-400 px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
                         <ion-icon name="walk"
                             class="group-hover:text-green-700 dark:group-hover:text-white "></ion-icon>
-                        <p class="group-hover:text-green-700 text-sm dark:group-hover:text-white ">Services</p>
+                        <p class="group-hover:text-green-700 dark:group-hover:text-white ">Services</p>
                     </div>
                 </div>
                 <div class="col-span-12 m-3 md:col-span-4 lg:col-span-2">
                     <div
-                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
+                        class="dark:text-white dark:bg-yellow-900 dark:shadow-gray-600 rounded-lg flex flex-col items-center shadow shadow-neutral-400 px-5 py-8 gap-2 lg:hover:-mt-2 hover:text-green-950 text-black group cursor-pointer">
                         <ion-icon name="thumbs-up"
                             class="group-hover:text-green-700 dark:group-hover:text-white "></ion-icon>
-                        <p class="group-hover:text-green-700 text-sm dark:group-hover:text-white ">Get Involved</p>
+                        <p class="group-hover:text-green-700 dark:group-hover:text-white ">Get Involved</p>
                     </div>
                 </div>
 
@@ -198,8 +199,6 @@
 
     <section id="prayer-time">
         <div class="container mx-auto ">
-            <h1 class="font-bold lg:text-2xl text-center lg:text-left dark:text-white text-green-600 text-lg">Prayer
-                Times</h1>
 
             <div
                 class="grid grid-cols-12 my-5 text-black bg-gradient-to-r from-orange-200 via-blue-50 to-indigo-100 items-center gap-5 py-10">
